@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--مشخص کردن زبان صفحه و اینکه صفحه از راست به چپ نوشته میشود-->
+<html lang="fa" dir="rtl">
+  <!-- المنت هد خانه تگ های  زیر است 
+<title>, <style>, <meta>, <link>, <script>, and <base>
+
+-->
+  <head>
+    <!-- متا تگ اطلاعاتی در باره صفحه هستند مثل مشحص کردن نوع کلمات یا کلمات کلیدی یا نام نویسنده
+            
+            *متاتگ ها همیشه در قسمت  هد قرار می گیرند
+            *متا تگ ها در صحفه نمایش داده نمی شوند ولی توسط مرورگر شناسایی میشوند
+      -->
+
+    <meta charset="UTF-8" />
+
+    <!-- صفحه را با توجه به سایز نمایشگر کاربر تنظیم می کند-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <meta name="description" content="دستکار ساده متن با جاوا اسکریپت" />
+
+    <!-- سرچ انجین ها از متای کیورد برای پیدا کردن مطالب شما استفاده می کنند-->
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+
+    <!--نویسنده صفحه را مشخص می کند -->
+    <meta name="author" content="Hossien solymany" />
+
+    <!-- صفحه را هر 10 دقیقه رفرش می کند-->
+    <meta http-equiv="refresh" content="10m" />
+
+    <!--چیزی که در تب مرورگر نشان داده می شود 
+      این تگ برای بهینه سازی صحفه برای موتور های جستجو بسیار مهم است
+      -->
+    <title>کار با متن</title>
+
+    <!--  این تگ برای تعریف استایل در این صفحه استفاده می شود
+      البته راه های دیگری برای اضافه کردن استایل وجود دارد 
+-->
+    <style>
+      /* وقتی سی اس اس ما نقطه ندارد یعنی به صورت پیشفرض هر المنتی با این نام
+    این ویژگی ها را دارد 
+    */
+      h1 {
+        color: aquamarine;
+      }
+    </style>
+
+    <!--لینک دادن -->
+    <link rel="stylesheet" type="text/css" href="../style/my_style.css" />
+
+    <!--برای نوشتن کد های جاوا در صفحه-->
+    <script>
+      function updateElemnt() {
+        document.getElementById("demo").innerHTML =
+          " این متن توسط جاوا اسکریپت جاسازی شد";
+      }
+    </script>
+    <!-- این مشخص میکند که بیس لینک های ما کجا باشد 
+    -->
+    <base href="http://127.0.0.1:8080" target="_blank" />
+  </head>
+
+  <body>
+    <p id="demo">متن ازمایشی</p>
+
+    <p><abbr title="یکی از شهر های جنوبی ایران">اهواز</abbr></p>
+
+    <button onclick="updateElemnt()">اپدیت</button>
+
+    <a href="/somelink"> لینک</a>
+    <!-- استفاده از بی دی ای برای وقتی که میخواهیم از حروف فارسی در میان انگلیسی استفاده کنیم-->
+    <ul>
+      <li>user <bdi> ehsan</bdi>: sport</li>
+      <li>user <bdi>با تگ بی دی ای  </bdi>: sport</li>
+      <li>user بدون تگ بی دی ای: sport</li>
+    </ul>
+    <article>
+      <h2>آشنایی با اچ تی ام ال</h2>
+      <p>این صفحه یک آشنایی اولیه با اچ تی ام ال و سی اسس و جاوا اسکریپت است</p>
+    </article>
+
+    <div>
+      <img
+        src="../img/twelve_imam.jpg"
+        alt=" امام زمان  علیه السلام"
+        width="200px"
+        height="250px"
+        usemap="#tm"
+      />
+
+      <map name="tm">
+        <area shape="rect" coords="65,40,90,80" href="#" alt="face" />
+      </map>
+    </div>
+  </body>
+</html>
