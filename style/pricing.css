@@ -105,3 +105,25 @@ p {
   opacity: 90%;
   margin-bottom: 40px;
 }
+
+
+/* این شیوه دسکتاپ فرست است */
+
+@media (max-width:750px){
+
+  .cart{
+    width: 90%;
+    height: auto;
+  }
+
+ .right, .left{
+  width: 100%;
+
+
+}
+
+.sinup{
+  height: 50px;
+}
+
+}
