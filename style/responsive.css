@@ -1,0 +1,34 @@
+html {
+  background-color: rgba(0, 0, 0, 0.788);
+  box-sizing: border-box;
+}
+*, *:before, *a:after{
+  box-sizing: inherit;
+}
+#pixel-size {
+  color: red;
+}
+
+img{
+  width: 100%;
+}
+@media all
+ and (min-width:576px) 
+ {
+  img{
+    width:49%;
+  }
+  #pixel-size {
+    color: rgb(76, 0, 255);
+  }
+}
+@media(min-width:992px){
+  img{
+    width: 24%;
+  }
+  #pixel-size{
+    color: chartreuse;
+    
+  }
+
+}

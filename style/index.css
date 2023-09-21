@@ -1,0 +1,21 @@
+html {
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.733);
+}
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+a{
+color: rgba(80, 80, 80, 0.884);
+}
+.links{
+      background-color: azure;
+      border-radius: 5px;
+      box-shadow: rgba(3, 3, 5, 5);
+      width: 70%;
+      height: 90%;
+      padding: 30px;
+      margin: 20px;
+}
