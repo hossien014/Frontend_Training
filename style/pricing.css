@@ -109,7 +109,7 @@ p {
 
 /* این شیوه دسکتاپ فرست است */
 
-@media (max-width:750px){
+@media all and (max-width:750px){
 
   .cart{
     width: 90%;
