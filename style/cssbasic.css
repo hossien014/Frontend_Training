@@ -1,0 +1,65 @@
+
+body {
+  margin: 0px;
+}
+.root{
+  background-color: #1d1d1d;
+  color: aliceblue;
+  background-image:url(https://bahjat.ir/sites/default/files/styles/tile_big/public/repo/pics/2016/04/16/pic-1250-1460817482.jpg?itok=XwDAlrwV);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h3 {
+ margin-right: 50px;
+}
+h3:after{
+  content: '   \0460';
+}
+nav {
+  z-index: 1; 
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  margin-top: 0px;
+  height: 60px;
+  background-color: black;
+  color: aliceblue;
+  display: flex;
+  animation:infinite alternate-reverse ;
+  animation-name: myanim ;
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation-duration: 2s;
+}
+@keyframes myanim{
+from{background-color: black;}
+to{background-color:rgb(12, 1, 51);}
+}
+.nav-list{
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-right: 20vw;
+}
+.nav-list > *{
+ margin-left: 20px;
+ color: #b3ff00;
+}
+
+
+div{
+    margin-top: 70px;
+}
+img{
+  position: relative;
+  margin: 10px;
+  align-items: center;
+  z-index: 3;
+
+}
+.blog-post{
+  /* background-color: blue; */
+  align-items: center;
+}

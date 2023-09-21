@@ -1,0 +1,19 @@
+body{
+      background-color: rgba(0, 0, 0, 0.753);
+      color: rgb(255, 255, 255);
+}
+.container{
+      display: flex;
+      text-align: center;
+}
+.container>*{
+      border-width: 4px;
+      border-style:solid;
+      flex-grow: 1;
+      margin: 10px;
+      
+}
+.box-1{
+      border-color: aquamarine;}
+.box-2{
+      border-color:blueviolet;}
