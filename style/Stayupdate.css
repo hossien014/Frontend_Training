@@ -2,32 +2,91 @@ html {
   background-color: hsl(234, 29%, 20%);
   margin: 0;
   padding: 0;
+  font-family: "Roboto";
+  font-weight: 500;
+  box-sizing: border-box;
+  font-size: 16px;
 }
+
 *,
 ::after,
 ::before {
   margin: 0;
   padding: 0;
   list-style: none;
+  box-sizing: border-box;
 }
 
 #root {
-  background-color: white;
-  border: 5px solid red;
-  height: 100vh;
+  background-color: hsla(0, 0%, 100%, 0.993);
+  height: 100%;
+  min-width: 100%;
   display: flex;
   flex-direction: column-reverse;
-  
-}
-.right {
-  border: 3px solid blue;
-  height: 40%;
-}
-.left {
-  border: 3px solid rgb(229, 255, 0);
-  height: 60%;
+
 }
 
+.right {
+      align-self: center;
+  height: 40%;
+ 
+}
+.left {
+  height: 60%;
+  padding: 30px;
+}
+.left h1 {
+  color: hsl(235, 29%, 16%);
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+#detail {
+  margin-bottom: 20px;
+  color: hsl(235, 29%, 16%);
+  font-size: 1rem;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.list-item {
+  margin-bottom: 15px;
+}
+.right img {
+  color: hsl(235, 29%, 16%);
+ max-width: 100%;
+ 
+}
+
+.email {
+  width: 100%;
+  min-height: 50px;
+
+  border-radius: 7px;
+  margin-bottom: 20px;
+  border-color: hsla(235, 29%, 16%, 0.568);
+  border-width: 1px;
+  opacity: 70%;
+}
+button {
+  width: 100%;
+  border: none;
+  background-color:  hsl(235, 29%, 16%);;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 700;
+  min-height: 50px;
+  opacity: 98%;
+  border-radius: 7px;
+  margin-bottom: 10px;
+}
+
+::placeholder {
+  padding: 15px;
+  font-size: 1rem;
+}
 @media (min-width: 500px) {
   #root {
     border: 3px solid red;
