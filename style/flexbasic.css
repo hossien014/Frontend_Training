@@ -1,0 +1,30 @@
+html{
+      background-color: rgb(51, 51, 51);
+      color: aliceblue;
+}
+
+.container{
+      font-size: 50px;
+      height: 300px;
+      width: 200  px;
+      display: flex;
+      background-color: grey;
+      flex-direction: row;
+      justify-content: start;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      align-content: flex-start;
+}
+.item{
+      flex-grow: 1;
+      background-color: aqua;
+      margin: 10px;
+      
+      
+}
+.item-1{
+}
+.subitem{
+    
+
+}
