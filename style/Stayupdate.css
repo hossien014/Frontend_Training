@@ -23,13 +23,11 @@ html {
   min-width: 100%;
   display: flex;
   flex-direction: column-reverse;
-
 }
 
 .right {
-      align-self: center;
+  align-self: center;
   height: 40%;
- 
 }
 .left {
   height: 60%;
@@ -54,10 +52,13 @@ ul {
 .list-item {
   margin-bottom: 15px;
 }
-.right img {
+.mobile {
+  display: block;
   color: hsl(235, 29%, 16%);
- max-width: 100%;
- 
+  max-width: 100%;
+}
+.desktop {
+  display: none;
 }
 
 .email {
@@ -73,7 +74,7 @@ ul {
 button {
   width: 100%;
   border: none;
-  background-color:  hsl(235, 29%, 16%);;
+  background-color: hsl(235, 29%, 16%);
   color: white;
   font-size: 0.9rem;
   font-weight: 700;
@@ -87,29 +88,49 @@ button {
   padding: 15px;
   font-size: 1rem;
 }
+
 @media (min-width: 500px) {
   #root {
-    border: 3px solid red;
+    /* border: 3px solid red; */
     background-color: rgba(255, 255, 255, 0.979);
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 5%;
+    margin-top: 2%;
     margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    min-width: 90%;
     height: auto;
-    width: 80%;
     display: flex;
     flex-direction: row;
+    border-radius: 15px;
   }
   .left {
-    border: 3px solid blue;
     width: 60%;
-    padding: 20px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
     height: auto;
   }
+
+  h1{
+      font-size: 30px;
+  }
   .right {
+    display: block;
     padding: 20px;
-    border: 3px solid yellow;
     width: 40%;
     height: auto;
+
+  }
+
+
+  .mobile {
+    display: none;
+  }
+    .desktop {
+    display: block;
+    max-width: 100%;
+    min-height: 100%;
+   
   }
 }
